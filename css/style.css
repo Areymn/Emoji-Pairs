@@ -2,77 +2,95 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 
+/* Comentario emoji */
+/* 👾👽👹💩💀🙈🤯🤡 */
 
+h1, h2 {
+    text-align: center;
+}
 
-/* 👾​👽​👹​💩​💀​🙈​🤯​🤡 */
-
-h1{
+h1 {
     color: orange;
     border: solid;
-    text-align: center;
     text-transform: uppercase;
     font-size: 3rem;
-    font-family:"Bungee Spice";
+    font-family: "Bungee Spice";
     margin: 20px;
     padding: 20px;
     background-color: rgb(245, 245, 164);
     border-radius: 16px;
-    box-shadow: 0 4px 30px ;
-
+    box-shadow: 0 4px 30px;
 }
 
-#instrucciones{
-padding: 30px;
-text-align: center;
-}
-
-#tituloInstrucciones{
+h2 {
     padding: 10px;
 }
 
 #listaNormas{
-    text-align: left;
-    padding: 0 0 0 60px;
-}
-
-#jugar{
+    margin: 20px;
     text-align: center;
-    
+    list-style-position: inside;
 }
 
-#tablaPuntos{
+#jugar, #tablaPuntos, #contenedor, #botonVolverJugar {
     text-align: center;
-    margin:20px;
 }
 
-#tablaEmojis{
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  height: 100%;
-  width: 100%;
-  
+#tablaEmojis {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    gap: 10px;
 }
 
-.cuadrado{
+#tablaEmojis > * {
+    width: calc(25% - 10px);
+}
+
+.cuadrado {
     background-color: yellow;
     height: 400px;
     width: 400px;
-    border-radius:10px;
-    
-    
+    border-radius: 10px;
+    margin: 20px;
 }
 
-#tablaEmojis li{
-    text-decoration: none;
+#contenedor {
+    display: flex;
+    justify-content: center;
 }
 
-.caraTrasera{
+#botonVolverJugar {
+    padding: 20px;
+}
+
+#tablaEmojis > li > .caraDelantera {
+    display: none;
+}
+
+.caraTrasera {
+
     max-width: 45px;
+    color: black; /* Añade un color al texto para asegurar su visibilidad */
+    text-align: center;
 }
 
+#tablaEmojis > li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative; /* Añade esto si necesitas mantener position: relative; por alguna razón */
+}
+
+.caraTrasera {
+    max-width: 45px;
+    color: black; /* Ajusta el color del texto según tus preferencias */
+}

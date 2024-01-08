@@ -50,3 +50,29 @@ text-align: center;
     margin:20px;
 }
 
+#tablaEmojis{
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  height: 100%;
+  width: 100%;
+  
+}
+
+.cuadrado{
+    background-color: yellow;
+    height: 400px;
+    width: 400px;
+    border-radius:10px;
+    
+    
+}
+
+#tablaEmojis li{
+    text-decoration: none;
+}
+
+.caraTrasera{
+    max-width: 45px;
+}
+

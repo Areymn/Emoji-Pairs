@@ -5,6 +5,9 @@
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+body {
+    font-family: 'Bungee Spice', sans-serif;
+}
 
 /* Comentario emoji */
 /* 👾👽👹💩💀🙈🤯🤡 */

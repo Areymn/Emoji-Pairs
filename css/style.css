@@ -1,22 +1,17 @@
+@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap');
 body {
     font-family: 'Bungee Spice', sans-serif;
 }
 
-/* Comentario emoji */
-/* 👾👽👹💩💀🙈🤯🤡 */
-
-h1, h2 {
-    text-align: center;
-}
-
 h1 {
+    text-align: center;
     color: orange;
     border: solid;
     text-transform: uppercase;
@@ -29,18 +24,26 @@ h1 {
     box-shadow: 0 4px 30px;
 }
 
-h2 {
+h2, #listaNormas {
     padding: 10px;
-}
-
-#listaNormas{
     margin: 20px;
     text-align: center;
     list-style-position: inside;
 }
 
-#jugar, #tablaPuntos, #contenedor, #botonVolverJugar {
+#jugar, #tablaPuntos, #contenedor, #contenido, #botonVolverJugar {
     text-align: center;
+}
+
+#instrucciones {
+    display: inline-block;
+    margin: auto;
+    margin-top: 20px;
+}
+
+#contenedor {
+    display: flex;
+    justify-content: center;
 }
 
 #tablaEmojis {
@@ -65,24 +68,15 @@ h2 {
     margin: 20px;
 }
 
-#contenedor {
-    display: flex;
-    justify-content: center;
-}
-
-#botonVolverJugar {
-    padding: 20px;
-}
-
-#tablaEmojis > li > .caraDelantera {
+.caraDelantera {
     display: none;
 }
 
 .caraTrasera {
-
     max-width: 45px;
-    color: black; /* Añade un color al texto para asegurar su visibilidad */
+    color: black;
     text-align: center;
+    /* Otros estilos específicos si los tienes */
 }
 
 #tablaEmojis > li {
@@ -90,10 +84,7 @@ h2 {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: relative; /* Añade esto si necesitas mantener position: relative; por alguna razón */
+    position: relative;
 }
 
-.caraTrasera {
-    max-width: 45px;
-    color: black; /* Ajusta el color del texto según tus preferencias */
-}
+

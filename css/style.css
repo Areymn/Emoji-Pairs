@@ -8,11 +8,8 @@
 
 body {
     font-family: 'Bungee Spice', sans-serif;
-    background-image:
-    linear-gradient(rgba(255, 255, 255, 0.567), rgba(255, 255, 255, 0.567)),
-    url('../images/fp_1.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.567), rgba(255, 255, 255, 0.567)), url('../images/fp_1.jpg');
     background-size: cover;
-
 }
 
 h1 {
@@ -23,7 +20,7 @@ h1 {
     font-size: 3rem;
     font-family: "Bungee Spice";
     margin: 20px;
-    padding: 20px;
+    padding: 5px;
     background-color: rgb(245, 245, 164);
     border-radius: 16px;
     box-shadow: 0 4px 30px;
@@ -31,7 +28,7 @@ h1 {
 
 h2, #listaNormas {
     padding: 10px;
-    margin: 20px;
+    margin: 10px;
     text-align: center;
     list-style-position: inside;
 }
@@ -43,18 +40,17 @@ h2, #listaNormas {
 
 #instrucciones {
     display: inline-block;
-    margin: auto;
-    margin-top: 20px;
+    margin: 10px;
+    margin-top: 10px;
     border-radius: 300px;
     background-color: rgba(255, 255, 108, 0.9);
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    border: 1px solid orange;
+    border: 2px solid orange;
 }
 
 #jugar, #tablaPuntos, #contenedor, #contenido, #botonVolverJugar {
     text-align: center;
 }
-
 
 .cuadrado {
     background-color: yellow;
@@ -64,7 +60,7 @@ h2, #listaNormas {
     margin: 20px;
     padding: 20px;
     box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
-    border: 1px solid orange;
+    border: 2px solid orange;
 }
 
 #tablaEmojis {
@@ -89,16 +85,8 @@ h2, #listaNormas {
     position: relative;
 }
 
-#tablaEmojis > li:hover .caraDelantera {
-    transform: rotateY(180deg);
-}
-
-#tablaEmojis > li:hover .caraTrasera {
-    transform: rotateY(0deg);
-}
-
-.caraDelantera, .caraTrasera {
-    transition: transform 0.5s ease; /* Transición para suavizar el efecto */
+#tablaEmojis > li .caraDelantera, #tablaEmojis > li .caraTrasera {
+    transition: transform 1.5s ease; /* Transición para suavizar el efecto */
     transform-style: preserve-3d;
     background-color: rgb(233, 164, 68);
     width: 200px;
@@ -112,42 +100,50 @@ h2, #listaNormas {
     box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3)
 }
 
-.caraDelantera {
+
+#tablaEmojis > li.caraDelantera {
+    display: none;
+}
+
+#tablaEmojis > li:hover .caraTrasera {
+    display: flex;
+    transform: rotateY(180deg);
+}
+
+.caraTrasera {
     position: absolute;
     z-index: 2;
 }
 
 .caraTrasera {
-    position: absolute;
-    z-index: 1;
     max-width: 100%;
     max-height: 80px;
     color: black;
     text-align: center;
 }
 
-.caraTrasera:hover {
-    cursor: pointer;
-    /* transform:rotateY(0); */
-    background-color:rgb(255, 255, 146);
-    -webkit-transform:rotateX(360deg);
-    transition: 2seg ease-in-out;
-}
-
-
 .caraDelantera {
     display: none;
-    max-width: 200px;
+    max-width: 100%;
     max-height: 80px;
     color: black;
     text-align: center;
 }
 
-/*.iconos{
-    font-size:70px;
+.caraDelantera:hover {
+    cursor: pointer;
+    background-color: rgb(255, 255, 146);
 }
-*/
 
+.caraTrasera:hover {
+    display: none;
+    cursor: pointer;
+    background-color: rgb(255, 255, 146);
+}
+
+.emojis{
+    font-size:50px; 
+}
 
 .miBoton {
     border: 1px solid orange;
@@ -157,14 +153,16 @@ h2, #listaNormas {
     margin: 0 0 40px 0;
     padding: 10px 20px;
     cursor: pointer; 
-    &:hover {
-        background-color: yellow;
-    }
-    &:active {
-        background-color: orange; 
-    }
-    box-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3)
 }
+
+.miBoton:hover {
+    background-color: yellow;
+}
+
+.miBoton:active {
+    background-color: orange; 
+}
+
 img {
     width: 50px;
     height: auto; 
@@ -172,6 +170,6 @@ img {
 
 #pieDePagina{
     font-family: sans-serif;
+    font-size: 0.5rem;
     margin: 10px;
 }
-    

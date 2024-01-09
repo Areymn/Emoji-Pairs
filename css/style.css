@@ -8,6 +8,7 @@
 
 body {
     font-family: 'Bungee Spice', sans-serif;
+    background-color: rgb(255, 195, 215);
 }
 
 h1 {
@@ -60,12 +61,33 @@ h2, #listaNormas {
     width: calc(25% - 10px);
 }
 
+#tablaEmojis > li {
+    list-style-type: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+#tablaEmojis > li:hover .caraDelantera {
+    transform: rotateY(180deg);
+}
+
+#tablaEmojis > li:hover .caraTrasera {
+    transform: rotateY(0deg);
+}
+
 .cuadrado {
     background-color: yellow;
     height: 400px;
     width: 400px;
     border-radius: 10px;
     margin: 20px;
+}
+
+.caraDelantera, .caraTrasera {
+    transition: transform 0.5s ease; /* Transición para suavizar el efecto */
+    transform-style: preserve-3d;
 }
 
 .caraDelantera {
@@ -79,15 +101,23 @@ h2, #listaNormas {
     /* Otros estilos específicos si los tienes */
 }
 
-#tablaEmojis > li {
-    list-style-type: none;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    position: relative;
+.miBoton {
+    border: 1px solid rgb(128, 128, 128);
+    font-size: 16pt;
+    font-family: Bungee Spice;
+    background-color: rgb(233, 233, 233);
+    padding: 10px 20px; 
+    cursor: pointer; 
+
+    &:hover {
+        background-color: rgb(200, 200, 200);
+    }
+    &:active {
+        background-color: rgb(150, 150, 150); 
+    }
 }
 
 
-#botonVolverJugar{
-    font-family: 'Bungee Spice', sans-serif;
-}
+
+
+    

@@ -161,16 +161,18 @@ h2, #listaNormas {
     background-color: rgb(245, 245, 164);
     margin: 0 0 40px 0;
     padding: 10px 20px;
-    cursor: pointer; 
+    cursor: pointer;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);    
 }
 
 .miBoton:hover {
     background-color: yellow;
+
 }
 
 .miBoton:active {
-    background-color: orange; 
-}
+    background-color: orange;
+    }
 
 img {
     width: 50px;

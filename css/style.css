@@ -48,7 +48,7 @@ h2, #listaNormas {
     border: 2px solid orange;
 }
 
-#jugar, #tablaPuntos, #contenedor, #contenido, #botonVolverJugar {
+#jugar, #intentos, #contenedor, #contenido, #botonVolverJugar {
     text-align: center;
 }
 

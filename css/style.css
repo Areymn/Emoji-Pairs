@@ -111,11 +111,11 @@ h2, #listaNormas {
     backface-visibility: hidden;
 }
 
-#tablaEmojis > li:hover .caraDelantera {
+#tablaEmojis > li.girada .caraDelantera {
     transform: rotateY(0deg);
 }
 
-#tablaEmojis > li:hover .caraTrasera {
+#tablaEmojis > li.girada .caraTrasera {
     transform: rotateY(180deg);
 }
 

@@ -48,7 +48,7 @@ h2, #listaNormas {
     border: 2px solid orange;
 }
 
-#jugar, #intentos, #contenedor, #contenido, #botonVolverJugar {
+#jugar, #intentos, #contenedor, #contenido, .miBoton {
     text-align: center;
 }
 
@@ -87,7 +87,7 @@ h2, #listaNormas {
 
 #tablaEmojis > li .caraDelantera,
 #tablaEmojis > li .caraTrasera {
-    transition: transform 1.5s ease; /* Transición para suavizar el efecto */
+    transition: transform 1s ease; /* TransiciÃ³n para suavizar el efecto */
     transform-style: preserve-3d;
     background-color: rgb(233, 164, 68);
     width: 200px;
@@ -182,4 +182,10 @@ img {
     font-family: sans-serif;
     font-size: 0.5rem;
     margin: 10px;
+}
+
+
+#contenedorBoton {
+    display: flex;
+    justify-content: center;
 }

@@ -3,193 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio</title>
+    <title>:exploding_head:Pareja de Emojis:alien:</title>
     <link rel="stylesheet" href="./css/style.css">
 </head>
-<body>
-    
 
-    <!DOCTYPE html>
-    <html lang="es">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Inicio</title>
-        <link rel="stylesheet" href="./css/style.css">
-    </head>
-    <body>
-        
-    
-        <div id="contenido">
-            <header>
-                <h1>Encuentra el Emoji</h1>
-            </header>
-            <main>
-                <section id="instrucciones">
-                    <h2 id="tituloInstrucciones">Instrucciones del juego</h2>
-                    <ul id="listaNormas">
-                        <li>Elige dos carta que tengan el mismo emoji y encuentra las 8 parejas.</li>
-                        <li>Las combinaciones correctas se quedarán descubiertas durante todo el juego.</li>
-                        <li>Trata de resolver el juego con el número mínimo de fallos.</li>
-                        <li>¡¡A darle caña a esa memoria!!</li>
-                    </ul>
-                </section>
-            </main>
-    
-        </div>
-    </button>
+<body>
+    <div id="contenido">
+        <header>
+            <h1>Encuentra el Emoji</h1>
+        </header>
+        <main>
+            <section id="instrucciones">
+                <h2 id="tituloInstrucciones">Instrucciones del juego</h2>
+                <ul id="listaNormas">
+                    <li>Elige dos cartas que tengan el mismo emoji y encuentra las 8 parejas.</li>
+                    <li>Las combinaciones correctas se quedarán descubiertas durante todo el juego.</li>
+                    <li>Trata de resolver el juego con el número mínimo de fallos.</li>
+                    <li>¡¡A darle caña a esa memoria!!</li>
+                </ul>
+            </section>
+        </main>
+    </div>
+
     <div id="titulo">
         <h2 id="jugar">¡A jugar!</h2>
         <div id="intentos">Intentos: 0</div>
-      </div>
+    </div>
+    
     <div id="contenedor">
         <div class="cuadrado" id="cartasContainer">
-            <ul id="tablaEmojis">
-                <!-- <li class="carta">
-                    <div class="caraTrasera">
-                        <div class="contenido">
-                        <span class="iconos"><img src="./images/signo-de-interrogacion.png" alt="Simbolo de interrogación"></span>
-                        </div>
-                    </div>
+            <ul id="tablaEmojis"></ul>
+        </div>
+    </div>
 
-                    <div class="caraDelantera">
-                        <span class="emojis">👾</span>
-                    </div>
-                </li>
-                <li class="carta">
-                    <div class="caraTrasera">
-                        <span class="iconos"><img src="./images/signo-de-interrogacion.png" alt="Simbolo de interrogación"></span>
-                    </div> 
-                    <div class="caraDelantera">
-                        <span class="emojis">👾</span>
-                    </div>
-                </li>
-                <li class="carta">
-                    <div class="caraTrasera">
-                        <span class="iconos"><img src="./images/signo-de-interrogacion.png" alt="Simbolo de interrogación"></span>
-                    </div> 
-                    <div class="caraDelantera">
-                        <span class="emojis">👽</span>
-                    </div>
-                </li>
-                <li class="carta">
-                    <div class="caraTrasera">
-                        <span class="iconos"><img src="./images/signo-de-interrogacion.png" alt="Simbolo de interrogación"></span>
-                    </div> 
-                    <div class="caraDelantera">
-                        <span class="emojis">👽</span>
-                    </div>
-                </li>
-                <li class="carta">
-                    <div class="caraTrasera">
-                        <span class="iconos"><img src="./images/signo-de-interrogacion.png" alt="Simbolo de interrogación"></span>
-                    </div> 
-                    <div class="caraDelantera">
-                        <span class="emojis">👹</span>
-                    </div>
-                </li>
-                <li class="carta">
-                    <div class="caraTrasera">
-                        <span class="iconos"><img src="./images/signo-de-interrogacion.png" alt="Simbolo de interrogación"></span>
-                    </div> 
-                    <div class="caraDelantera">
-                        <span class="emojis">👹</span>
-                    </div>
-                </li>
-                <li class="carta">
-                    <div class="caraTrasera">
-                        <span class="iconos"><img src="./images/signo-de-interrogacion.png" alt="Simbolo de interrogación"></span>
-                    </div> 
-                    <div class="caraDelantera">
-                        <span class="emojis">💩</span>
-                    </div>
-                <li class="carta">
-                        <div class="caraTrasera">
-                            <span class="iconos"><img src="./images/signo-de-interrogacion.png" alt="Simbolo de interrogación"></span>
-                        </div> 
-                        <div class="caraDelantera">
-                            <span class="emojis">💩</span>
-                        </div>
-                </li>                
-                <li class="carta">
-                    <div class="caraTrasera">
-                        <span class="iconos"><img src="./images/signo-de-interrogacion.png" alt="Simbolo de interrogación"></span>
-                    </div> 
-                    <div class="caraDelantera">
-                        <span class="emojis">💀</span>
-                    </div>
-                </li>
-                <li class="carta">
-                    <div class="caraTrasera">
-                        <span class="iconos"><img src="./images/signo-de-interrogacion.png" alt="Simbolo de interrogación"></span>
-                    </div> 
-                    <div class="caraDelantera">
-                        <span class="emojis">💀</span>
-                    </div>
-                </li>
-                <li class="carta">
-                    <div class="caraTrasera">
-                        <span class="iconos"><img src="./images/signo-de-interrogacion.png" alt="Simbolo de interrogación"></span>
-                    </div> 
-                    <div class="caraDelantera">
-                        <span class="emojis">🙈</span>
-                    </div>
-                </li>
-                <li class="carta">
-                    <div class="caraTrasera">
-                        <span class="iconos"><img src="./images/signo-de-interrogacion.png" alt="Simbolo de interrogación"></span>
-                    </div> 
-                    <div class="caraDelantera">
-                        <span class="emojis">🙈</span>
-                    </div>
-                </li>
-                <li class="carta">
-                    <div class="caraTrasera">
-                        <span class="iconos"><img src="./images/signo-de-interrogacion.png" alt="Simbolo de interrogación"></span>
-                    </div> 
-                    <div class="caraDelantera">
-                        <span class="emojis">🤯</span>
-                    </div>
-                </li>
-                <li class="carta">
-                    <div class="caraTrasera">
-                        <span class="iconos"><img src="./images/signo-de-interrogacion.png" alt="Simbolo de interrogación"></span>
-                    </div> 
-                    <div class="caraDelantera">
-                        <span class="emojis">🤯</span>
-                    </div>
-                </li>
-                <li class="carta">
-                    <div class="caraTrasera">
-                        <span class="iconos"><img src="./images/signo-de-interrogacion.png" alt="Simbolo de interrogación"></span>
-                    </div> 
-                    <div class="caraDelantera">
-                        <span class="emojis">🤡</span>
-                    </div>
-                </li>
-                <li class="carta">
-                    <div class="caraTrasera">
-                        <span class="iconos"><img src="./images/signo-de-interrogacion.png" alt="Simbolo de interrogación"></span>
-                    </div> 
-                    <div class="caraDelantera">
-                        <span class="emojis">🤡</span>
-                    </div>
-                </li>
-                </li> -->
-            </ul>
-        </div> 
-    
-      </div>
-    <div id="botonVolverJugar">
-        <!-- <input type="button" value="Jugar de nuevo" name="boton" class="miBoton"> -->
-        <button class="miBoton">Jugar de nuevo</button>
+    <div id="contenedorBoton">
+        <button class="miBoton" type="reset" id="botonVolverJugar">Jugar de nuevo</button>
     </div>
 
     <footer id="pieDePagina">Creado por Cris, Alexiel, Cris y Eneko. Derechos Reservados ©</footer>
+    
     <script src="./js/script.js"></script>
-    </body>
-    </html> 
+</body>
 
-
-
-
+</html>

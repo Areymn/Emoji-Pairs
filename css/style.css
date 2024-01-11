@@ -161,7 +161,8 @@ h2, #listaNormas {
     background-color: rgb(245, 245, 164);
     margin: 0 0 5px 0;
     padding: 10px 15px;
-    cursor: pointer; 
+    cursor: pointer;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
 }
 
 .miBoton:hover {

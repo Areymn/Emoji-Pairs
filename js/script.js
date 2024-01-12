@@ -8,16 +8,20 @@ let intentos = 0;
 let clicks = 0;
 let cardsFlipped = 0;
 let canFlip = true;
+const sonidoAcierto = document.getElementById('sonidoAcierto');
+
 
 function checkMatch() {
     if (firstEmojiLi.innerHTML === secondEmojiLi.innerHTML) {
         cardsFlipped += 2;
+        sonidoAcierto.play();
+       
     } else {
         setTimeout(() => {
             firstEmojiLi.classList.remove('girada');
             secondEmojiLi.classList.remove('girada');
             canFlip = true;
-        }, 8800);
+        }, 1000);
     }
 
     firstEmojiLi = null;

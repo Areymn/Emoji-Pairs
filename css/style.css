@@ -31,7 +31,34 @@ h2, #listaNormas {
     margin: 10px;
     text-align: center;
     list-style-position: inside;
+        
 }
+
+#listaNormas {
+    list-style-type: none;
+  }
+  
+  #listaNormas li:before {
+    margin-right: 8px;
+    font-size: 0.8em;
+    vertical-align: text-top;
+  }
+  
+  #listaNormas li:first-child:before {
+    content: '👾';
+  }
+  
+  #listaNormas li:nth-child(2):before {
+    content: '🙈';
+  }
+
+  #listaNormas li:nth-child(3):before {
+    content: '👹';
+  }
+  
+  #listaNormas li:nth-child(4):before {
+    content: '🤯';
+  }
 
 #contenedor {
     display: flex;

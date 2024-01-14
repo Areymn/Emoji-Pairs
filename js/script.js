@@ -8,19 +8,19 @@ let intentos = 0;
 let clicks = 0;
 let cardsFlipped = 0;
 let canFlip = true;
-const sonidoAcierto = document.getElementById('sonidoAcierto');
 
 
 function checkMatch() {
     if (firstEmojiLi.innerHTML === secondEmojiLi.innerHTML) {
         cardsFlipped += 2;
-        sonidoAcierto.play();
+        
        
     } else {
         setTimeout(() => {
             firstEmojiLi.classList.remove('girada');
             secondEmojiLi.classList.remove('girada');
             canFlip = true;
+
         }, 1000);
     }
 
@@ -29,6 +29,7 @@ function checkMatch() {
 
     if (cardsFlipped === emojis.length) {
         console.log("¡Has ganado!");
+
     }
 }
 
@@ -40,6 +41,7 @@ const comprobarCoincidencia = async (secs) => {
         if (firstEmoji !== secondEmoji) {
             firstEmojiLi.classList.remove('girada')
             secondEmojiLi.classList.remove('girada')
+ 
         }
         canFlip = true;
     }, secs * 1500)
@@ -69,7 +71,6 @@ function initgame() {
             if (!cartaLi.classList.contains('girada') && cardsFlipped <= 16 && canFlip) {
                 cartaLi.classList.add('girada');
                 clicks++;
-
                 if (clicks % 2 === 0) {
                     intentos++;
                     intentosElemento.textContent = `Intentos: ${intentos}`;
@@ -83,6 +84,7 @@ function initgame() {
         });
 
         cartasContainer.append(cartaLi);
+     
     }
 }
 
@@ -94,5 +96,12 @@ function botonVolverJugar() {
  }
 
  recargar.addEventListener('click', botonVolverJugar);
+
+   function play() {
+    document.body.addEventListener('click', play)
+    const audio = document.getElementById("audio");
+    audio.play();
+   }
+
 
 initgame();

@@ -10,6 +10,13 @@ let cardsFlipped = 0;
 let canFlip = true;
 
 
+function mostrarMensaje() {
+    if (cardsFlipped === emojis.length) {
+        alert("Enhorabuena, ¡Has ganado!");
+    }
+}
+
+
 function checkMatch() {
     if (firstEmojiLi.innerHTML === secondEmojiLi.innerHTML) {
         cardsFlipped += 2;
@@ -27,10 +34,7 @@ function checkMatch() {
     firstEmojiLi = null;
     secondEmojiLi = null;
 
-    if (cardsFlipped === emojis.length) {
-        console.log("¡Has ganado!");
 
-    }
 }
 
 const comprobarCoincidencia = async (secs) => {
@@ -76,17 +80,20 @@ function initgame() {
                     intentosElemento.textContent = `Intentos: ${intentos}`;
                     secondEmojiLi = cartaLi;
                     canFlip = false;
+                    
                     await comprobarCoincidencia(0.5);
                 } else {
                     firstEmojiLi = cartaLi;
-                }
-            }
+                } 
+                play();
+            }            
         });
-
+        
         cartasContainer.append(cartaLi);
      
     }
 }
+
 
 //  Recargar página en el logo
 const recargar = document.querySelector('#botonVolverJugar')

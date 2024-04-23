@@ -1,50 +1,48 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Encuentra el Emoji</title>
+    <title>Emoji Pairs</title>
     <link rel="stylesheet" href="./css/style.css">
-    <audio id="audio" src="./audio/carta-naipes-naipe-carta-repartir-6-.mp3"></audio>
 </head>
 
 <body>
-    <div id="contenido">
+    <div id="content">
         <header>
-            <h1>Encuentra el Emoji</h1>
+            <h1>Emoji Pairs</h1>
         </header>
         <main>
-            <section id="instrucciones">
-                <h2 id="tituloInstrucciones">Instrucciones del juego</h2>
-                <ul id="listaNormas">
-                    <li>Lo primero de todo, ¿Cómo están los máquinas?</li>
-                    <li>Elige dos cartas que tengan el mismo emoji y encuentra las 8 parejas.</li>
-                    <li>Las combinaciones correctas se quedarán descubiertas.</li>
-                    <li>Trata de resolver el juego con el número mínimo de fallos.</li>
-                    <li>¡¡A darle caña a esa memoria!!</li>
+            <section id="instructions">
+                <h2>How to play</h2>
+                <ul id="rulesList">
+                    <li>First things first, how are the machines?</li>
+                    <li>Choose 2 cards that share an emoji and find the 8 pairs!</li>
+                    <li>Correct combinations will remain flipped</li>
+                    <li>Can you solve it in the least amount of attempts?</li>
                 </ul>
             </section>
         </main>
     </div>
 
-    <div id="titulo">
-        <h2 id="jugar">¡A jugar!</h2>
-        <div id="intentos">Intentos: 0</div>
+    <div id="title">
+        <h2>Play time!</h2>
+        <div id="attempts">Attempts: 0</div>
     </div>
     
-    <div id="contenedor">
-        <div class="cuadrado" id="cartasContainer">
-            <ul id="tablaEmojis"></ul>
+    <div id="container">
+        <div class="square" id="cardsContainer">
+            <ul id="emojiTable"></ul>
         </div>
     </div>
 
-    <div id="contenedorBoton">
-        <button class="miBoton" type="reset" id="botonVolverJugar">Jugar de nuevo</button>
+    <div id="buttonContainer">
+        <button class="myButton" type="reset" id="playAgainButton">Play Again</button>
     </div>
 
-    <footer id="pieDePagina">Creado por Cris, Alexiel, Cris y Eneko. Derechos Reservados ©</footer>
+    <footer id="footer">Made by Cris U., Cris V, Eneko & Alexiel. All Rights Reserved ©</footer>
     
     <script src="./js/script.js"></script>
 </body>
-
 </html>
+

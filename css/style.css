@@ -8,7 +8,7 @@
 
 body {
     font-family: 'Honk', sans-serif;
-    background-image: linear-gradient(rgba(255, 255, 255, 0.567), rgba(255, 255, 255, 0.567)), url('../images/bg_1.jpg');
+    background-image: linear-gradient(rgba(255, 255, 255, 0.567), rgba(255, 255, 255, 0.567)), url('../images/background.jpg');
     background-size: cover;
     font-size: 1rem; 
 }
